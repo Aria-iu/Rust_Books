@@ -1,5 +1,48 @@
 
 
-学习Rust的书籍资料
+# Rust 学习书目与合法访问索引
 
-本仓库收集了 Rust 官方指南、经典书籍及优质学习资料，方便开发者系统学习。
+这里按**最新优先**整理 Rust 书籍与长期可用的官方/维护者学习资料，帮助中文读者按方向选择阅读材料。仓库不新增、也不要求下载任何 PDF、EPUB 或其他书籍文件；所有链接均指向出版方、作者或项目官方渠道。商业书籍只标注「官方付费购买」或「付费订阅后在线阅读」，任何电子书下载均须在付费购买后按授权进行；免费资料才明确标注「在线阅读」或「源码 ZIP 下载」。
+
+## 2026：新版与近期出版物
+
+| 年份/状态 | 书籍或资源 | 方向 | 概要 | 访问 |
+| --- | --- | --- | --- | --- |
+| 2026-05（MEAP；约 70% 完成，预计 2027 年初出版） | *Embedded Software with Rust* — David Cabanis | 嵌入式 / 固件 / `no_std` | 以固件实践讲解裸机 Rust、外设访问、内存映射 I/O、定时/中断与 C 互操作，补足嵌入式学习路径。 | [Manning 官方付费购买 / 订阅后在线阅读（MEAP）](https://www.manning.com/books/embedded-software-with-rust) |
+| 2026-04 | *Rust: The Practical Guide* — Nouman Azam | 入门到进阶 | 从安装、语法与所有权起步，逐步进入泛型、智能指针、并发、宏和 Web 编程，并配有练习。 | [Packt 官方付费购买（购买后可按授权下载电子书）](https://www.packtpub.com/en-us/product/rust-9781807785109) |
+| 2026-03 | *The Rust Programming Language*, 3rd Edition — Steve Klabnik、Carol Nichols、Chris Krycho | 语言基础 / 工程实践 | 基于 Rust 2024 Edition，新增完整 async 章节与 Miri，结合 CLI 和多线程服务器项目解释所有权、类型、错误处理与 Cargo。 | [No Starch 官方付费购买 / 购买后阅读](https://nostarch.com/rust-programming-language-3e) |
+| 2026-01 | *Rust Web Programming*, 3rd Edition — Maxwell Flitton | Web / 微服务 | 从 Rust 基础衔接服务端 Web 开发，涵盖 Axum、WebAssembly、TLS 及微服务与 nanoservice 的设计实践。 | [Packt 官方付费购买 / 购买后在线阅读](https://www.packtpub.com/en-us/product/rust-web-programming-9781835887776) |
+
+## 2025：仍具参考价值的近作
+
+| 年份/状态 | 书籍或资源 | 方向 | 概要 | 访问 |
+| --- | --- | --- | --- | --- |
+| 2025-12 | *The Rust Programming Handbook* — Francesco Ciulla | 入门 / 工程实践 | 从开发环境、核心语法和 CLI 项目入门，再延伸到所有权、并发与构建实际应用所需的 Rust 基础。 | [Packt 官方付费购买 / 购买后在线阅读](https://www.packtpub.com/en-us/product/the-rust-programming-handbook-9781836208877) |
+| 2025-06 | *Refactoring to Rust* — Lily Mara、Joel Holmes | 迁移 / FFI | 面向既有代码库的渐进式迁移：以 Rust 库接入其他语言，处理安全边界、并发、HTTP 服务与 WebAssembly。 | [Manning 官方付费购买 / 订阅后在线阅读](https://www.manning.com/books/refactoring-to-rust) |
+| 2025（作者页面标注 ©2025；更新状态未核实） | *Rust for C Programmers* — S. Salewski | C/C++ 转 Rust | 为熟悉 C 的系统开发者对照讲解所有权、借用、类型系统、`unsafe` 与 FFI，建立不同于手工内存管理的思维方式。 | [作者免费在线阅读](https://rust-for-c-programmers.com/) |
+
+## 长期可用的官方 / 维护者免费资料
+
+| 年份/状态 | 书籍或资源 | 方向 | 概要 | 访问 |
+| --- | --- | --- | --- | --- |
+| 持续更新（官方；Rust 2024 Edition） | *The Rust Programming Language*（官方在线版） | 入门 / 语言基础 | Rust 项目维护的入门主线，覆盖安装、所有权、trait、测试、并发与常用工程流程；适合作为第一本免费教材。 | [在线阅读](https://doc.rust-lang.org/book/) · [源码 ZIP 下载](https://github.com/rust-lang/book/archive/refs/heads/main.zip) |
+| 重写中（内容可能缺失或粗糙） | *Asynchronous Programming in Rust* | async / 并发 | 以 Future、async/await 与运行时模型建立异步心智模型；官方说明正在重写，部分内容可能缺失或较粗糙，适合补充概念，实践时应结合现行运行时文档。 | [在线阅读](https://rust-lang.github.io/async-book/) · [源码 ZIP 下载](https://github.com/rust-lang/async-book/archive/refs/heads/master.zip) |
+| 开源项目资料（可在线使用） | *Command Line Applications in Rust* | CLI 工具 | 以一个可工作的 CLI 为起点，讲参数、错误、测试、配置、信号、文档与发布，适合用项目巩固 Cargo。 | [在线阅读](https://rust-cli.github.io/book/) · [源码 ZIP 下载](https://github.com/rust-cli/book/archive/refs/heads/master.zip) |
+| 官方工作组资料（Rust 2018 示例） | *The Embedded Rust Book* | 嵌入式 / `no_std` | 聚焦裸机与资源受限环境，涉及交叉编译、内存映射外设、中断、并发和硬件抽象；示例以 ARM Cortex-M 为主。 | [在线阅读](https://docs.rust-embedded.org/book/) · [源码 ZIP 下载](https://github.com/rust-embedded/book/archive/refs/heads/master.zip) |
+| 持续更新（官方） | *The Cargo Book* | 构建 / 包管理 | 系统说明 package、依赖、workspace、profile、发布与命令行工作流，是所有 Rust 工程的常用参考。 | [在线阅读](https://doc.rust-lang.org/cargo/) |
+| 持续更新（官方） | *The rustc book* | 编译器 / 工具链 | 介绍 `rustc` 的命令行选项、代码生成、lint、链接与调试相关能力，适合排查构建与编译问题。 | [在线阅读](https://doc.rust-lang.org/rustc/) |
+
+## 按目标选择阅读路径
+
+- **第一次学习 Rust：** 先读官方在线版 *The Rust Programming Language*；希望用最新付费实体/电子版系统学习，可选其 2026 第 3 版。
+- **已有 C/C++ 背景：** 用 *Rust for C Programmers* 建立所有权与借用的对照思维，再读 *Refactoring to Rust* 学习渐进迁移和 FFI。
+- **异步或高并发服务：** 在掌握官方主线后，可用重写中的 *Asynchronous Programming in Rust* 补齐概念；实战时再对照所选运行时（如 Tokio）的现行官方文档。
+- **命令行工具：** 以 *Command Line Applications in Rust* 实作一个可发布 CLI，并随时查阅 *The Cargo Book*。
+- **Web、API 与微服务：** 选择 2026 年的 *Rust Web Programming*, 3rd Edition，按书中 Axum、TLS 与服务拆分路径实践。
+- **嵌入式、`no_std` 或构建工具链：** 硬件开发先读 *The Embedded Rust Book*（注意其 Rust 2018 示例），再按需选 *Embedded Software with Rust*（MEAP，未完稿）；工程配置与编译诊断结合 *The Cargo Book* 和 *The rustc book*。
+
+## 使用说明
+
+- 书籍的出版时间和电子版可用性以其出版方页面为准；MEAP 条目明确标注未完稿和预计出版时间，避免将预发行误认为正式发售。
+- 商业书籍仅可在出版方完成付费购买或订阅后，按其授权阅读或下载；源码 ZIP 链接只用于开源资料源码。请遵守对应购买条款与许可证。
+- 如发现链接失效、出版信息更新，欢迎提交 issue 或 PR，并优先提供作者、出版社或 Rust 项目的原始链接。
