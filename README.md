@@ -1,5 +1,3 @@
-
-
 # Rust 学习书目与合法访问索引
 
 这里按**最新优先**整理 Rust 书籍与长期可用的官方/维护者学习资料，帮助中文读者按方向选择阅读材料。仓库不新增、也不要求下载任何 PDF、EPUB 或其他书籍文件；所有链接均指向出版方、作者或项目官方渠道。商业书籍只标注「官方付费购买」或「付费订阅后在线阅读」，任何电子书下载均须在付费购买后按授权进行；免费资料才明确标注「在线阅读」或「源码 ZIP 下载」。
@@ -32,14 +30,38 @@
 | 持续更新（官方） | *The Cargo Book* | 构建 / 包管理 | 系统说明 package、依赖、workspace、profile、发布与命令行工作流，是所有 Rust 工程的常用参考。 | [在线阅读](https://doc.rust-lang.org/cargo/) |
 | 持续更新（官方） | *The rustc book* | 编译器 / 工具链 | 介绍 `rustc` 的命令行选项、代码生成、lint、链接与调试相关能力，适合排查构建与编译问题。 | [在线阅读](https://doc.rust-lang.org/rustc/) |
 
+## 仓库已有书籍索引（仅定位）
+
+以下是当前仓库根目录中已有文件的用途说明和相对位置。为避免将版权状态未核验的文件再次分发，此表提供**纯文本路径**，不提供外部下载站或仓库内直链。
+
+| 书籍或资料 | 方向 | 概要 | 仓库位置 |
+| --- | --- | --- | --- |
+| *Command-Line Rust* | CLI / 项目实战 | 通过多个命令行项目训练参数解析、错误处理、文件处理、测试与发布流程。 | `Command-Line Rust A Project-Based Primer for Writing Rust CLIs_9781098109431.pdf` |
+| *Data Analysis with Rust Notebooks* | 数据分析 / Notebook | 将 Rust 用于可复现实验、数据处理和交互式 notebook 工作流。 | `Data Analysis with Rust Notebooks (Dr. Shahin Rostami) (Z-Library).pdf` |
+| *GUI Development with Rust and GTK 4* | 桌面 GUI | 使用 GTK 4 构建 Rust 图形界面，覆盖控件、事件、状态与桌面应用组织。 | `GUI development with Rust and GTK 4.pdf` |
+| *Hands-On Concurrency with Rust* | 并发 / 性能 | 围绕线程、消息传递、共享状态与并行算法构建内存安全的高效并发程序。 | `Hands-On Concurrency with Rust Confidently build memory-safe, parallel, and efficient software in Rust (Brian L. Troutwine) (Z-Library).pdf` |
+| *RISC-V Reader*（中文版） | 计算机体系结构 | RISC-V 指令集与软硬件接口参考，可辅助理解 Rust 嵌入式与底层开发环境。 | `RISC-V-Reader-Chinese-v2p12017.pdf` |
+| *Refactoring to Rust*（MEAP） | 迁移 / FFI | 面向遗留系统的渐进式 Rust 改造，重点是边界设计、互操作和安全替换。 | `Refactoring to Rust MEAP V05 (Lily Mara) (Z-Library).pdf` |
+| *Rust Design Patterns*（MEAP） | 设计模式 / 架构 | 汇集 Rust 惯用模式与可复用设计方案，适合在掌握基础后提升工程组织能力。 | `Rust Design Patterns (MEAP V02) (Brenden Matthews) (Z-Library).pdf` |
+| *Rust in Practice*, 2nd Edition | 工程实战 / 系统编程 | 通过真实工程主题练习网络、系统接口、可靠性与生产级 Rust 开发。 | `Rust In Practice, Second Edition (Rick Tim).pdf` |
+| *Rust Web Development* | Web 后端 | 介绍以 Rust 构建 Web 服务的路由、请求处理、数据层与部署基础。 | `Rust Web Development_9781617299001.pdf` |
+| *Rust 参考手册*（中文版） | 语言参考 | 面向查阅的语言规范类资料，适合确认语法、类型、表达式和语义细节。 | `Rust 参考手册 中文版.pdf` |
+| *Rust 权威指南* | 入门 / 语言基础 | 以所有权、借用、类型系统、错误处理和并发为主线的系统入门材料。 | `Rust权威指南.pdf` |
+| *Rust 程序设计* | 入门 / 编程基础 | 从基本语法、控制流和数据结构进入 Rust 编程，适合补齐语言起步知识。 | `Rust程序设计.pdf` |
+| *The Embedded Rust Book* | 嵌入式 / `no_std` | 裸机 Rust、交叉编译、外设访问、中断与硬件抽象的入门资料。 | `The Embedded Rust Book.pdf` |
+| *The Embedded Rust Book*（中文版） | 嵌入式 / `no_std` | 上述嵌入式资料的中文版本，便于快速理解 Cortex-M 与裸机开发概念。 | `The Embedded Rust Book＿Ｃｈｉｎｅｓｅ.pdf` |
+| *The rustc book* | 编译器 / 工具链 | `rustc` 选项、代码生成与编译诊断的参考资料。 | `The rustc book.pdf` |
+| *精通 Rust（第 2 版）* | 进阶 / 工程实践 | 面向已有基础的进阶主题，适合深化类型、抽象、并发与工程化能力。 | `精通Rust（第2版）.pdf` |
+| *通过例子学 Rust*（中文版） | 示例驱动入门 | 用可运行的小例子讲解语言特性，适合配合主线教材快速练习。 | `通过例子学 Rust 中文版.pdf` |
+
 ## 按目标选择阅读路径
 
 - **第一次学习 Rust：** 先读官方在线版 *The Rust Programming Language*；希望用最新付费实体/电子版系统学习，可选其 2026 第 3 版。
 - **已有 C/C++ 背景：** 用 *Rust for C Programmers* 建立所有权与借用的对照思维，再读 *Refactoring to Rust* 学习渐进迁移和 FFI。
 - **异步或高并发服务：** 在掌握官方主线后，可用重写中的 *Asynchronous Programming in Rust* 补齐概念；实战时再对照所选运行时（如 Tokio）的现行官方文档。
-- **命令行工具：** 以 *Command Line Applications in Rust* 实作一个可发布 CLI，并随时查阅 *The Cargo Book*。
-- **Web、API 与微服务：** 选择 2026 年的 *Rust Web Programming*, 3rd Edition，按书中 Axum、TLS 与服务拆分路径实践。
-- **嵌入式、`no_std` 或构建工具链：** 硬件开发先读 *The Embedded Rust Book*（注意其 Rust 2018 示例），再按需选 *Embedded Software with Rust*（MEAP，未完稿）；工程配置与编译诊断结合 *The Cargo Book* 和 *The rustc book*。
+- **命令行工具：** 以 *Command Line Applications in Rust* 或仓库中的 *Command-Line Rust* 实作一个可发布 CLI，并随时查阅 *The Cargo Book*。
+- **Web、API 与微服务：** 选择 2026 年的 *Rust Web Programming*, 3rd Edition，并可参考仓库中的 *Rust Web Development*。
+- **嵌入式、`no_std` 或构建工具链：** 硬件开发先读 *The Embedded Rust Book*，再按需选 *Embedded Software with Rust*（MEAP，未完稿）；工程配置与编译诊断结合 *The Cargo Book* 和 *The rustc book*。
 
 ## 使用说明
 
